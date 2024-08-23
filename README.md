@@ -1,5 +1,7 @@
 # Performance Analysis Report in Power BI.
 
+# DashboardLink : https://app.powerbi.com/groups/me/reports/c52522e5-1eab-40e4-9cc1-78df19c84cf2/6408a0bd8a2cc31d1fa2?experience=power-bi
+
 ## Table of Content:
 - [Business Case](#business-case)
 - [Project Overview](#project-overview)
