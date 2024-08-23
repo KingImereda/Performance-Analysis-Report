@@ -64,18 +64,17 @@ Cleaned Data were loaded to create a virtual tables as follows
  Date(calendar table)
  Calculated Table
 - Date(calendar table)
- - Dim_Date = 
- - CALENDAR(
+```Dim_Date = 
+   CALENDAR(
     DATE(2022, 1, 1), 
     DATE(2024, 12, 31)
 )
-    
--     Inpast =
- - VAR lastsalesdate = MAX(Fact_sales[Date_Time])
- - VAR lastsalesdatePY = EDATE(lastsalesdate, -12)
- - RETURN
- - Dim_Date[Date] <= lastsalesdatePY
-
+        Inpast =
+ VAR lastsalesdate = MAX(Fact_sales[Date_Time])
+ VAR lastsalesdatePY = EDATE(lastsalesdate, -12)
+ RETURN
+ Dim_Date[Date] <= lastsalesdatePY
+```
 
 ### Measures using DAX
 
@@ -105,42 +104,49 @@ Cleaned Data were loaded to create a virtual tables as follows
 ### Base Measures for PYTD
 
 - PYTD_Sales:
-- PYTD_Sales = 
+```  
+ PYTD_Sales = 
  CALCULATE(
      [Sales], 
      SAMEPERIODLASTYEAR(Dim_Date[Date]),
      Dim_Date[Inpast] = TRUE
  )
-
+```
 -PYTD_Quantity:
-- PYTD_Quantity = 
+```
+PYTD_Quantity = 
  CALCULATE(
      [Quantity], 
      SAMEPERIODLASTYEAR(Dim_Date[Date]),
      Dim_Date[Inpast] = TRUE
  )
-
+```
 PYTD_Gross_Profit:
-- PYTD_Gross_Profit = 
+```
+PYTD_Gross_Profit = 
  CALCULATE(
      [Gross_Profit], 
      SAMEPERIODLASTYEAR(Dim_Date[Date]),
      Dim_Date[Inpast] = TRUE
  )
-
+```
 #### Base Measures For YTD
 
 YTD_Sales:
-- YTD_Sales = TOTALYTD([Sales],Fact_Sales[Date_Time])
-
+```
+YTD_Sales = TOTALYTD([Sales],Fact_Sales[Date_Time])
+```
+```
 YTD_Quantity:
 - YTD_Quantity = TOTALYTD([Quantity],Fact_Sales[Date_Time])
-
+```
+```
 YTD_Gross_Profit:
 - YTD_Gross_Profit = TOTALYTD([Gross_Profit],Fact_Sales[Date_Time])
+```
 
 #### Switche for PYTD:
-
+```
  S_PYTD =
   VAR selected_value =SELECTEDVALUE(Slicer_Values[Values])
   VAR result = SWITCH(selected_value,
@@ -151,9 +157,9 @@ YTD_Gross_Profit:
   )
   RETURN
   result
-
+```
 #### Switch for YTD:
-
+```
  S_YTD =
   VAR selected_value =SELECTEDVALUE(Slicer_Values[Values])
   VAR result = SWITCH(selected_value,
@@ -164,11 +170,11 @@ YTD_Gross_Profit:
   )
   RETURN
   result
-
+```
 ### Comparing YTD Measures against PYTD using Switch:
-
+```
  YTD vs PYTD =[S_YTD]-[S_PYTD]
-
+```
 
 ### Data Model
 Create a Data Model View, by connecting the Primary keys in our respective Dimension tables(Date, Account, Product) to the corresponding Foreign Keys in the Sales Fact table.
