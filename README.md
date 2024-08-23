@@ -40,7 +40,7 @@ Data Ingestion & Cleaning :
 Data Preparation Phase- In Power BI environment, Data was extracted from Excel files into Power Query and cleaned by applying the following techniques.
 
 - Data Profiling: Check summary statistics and quality of the data.
-- Data Cleaning: Removing duplicate records from assigned primary columns, checking for          outliers, renaming columns appropriately and so on.
+- Data Cleaning: Removing duplicate records from assigned primary columns, checking for outliers, renaming columns appropriately and so on.
 - Data Transformation: Converting data into suitable format for analysis(date, numerical, text format and so on.)
 
 ### Creating Virtual Tables.
