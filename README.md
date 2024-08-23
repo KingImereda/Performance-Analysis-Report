@@ -1,6 +1,6 @@
 # Performance Analysis Report in Power BI.
 
-# DashboardLink : https://app.powerbi.com/groups/me/reports/c52522e5-1eab-40e4-9cc1-78df19c84cf2/6408a0bd8a2cc31d1fa2?experience=power-bi
+# Interactive Dashboard Link : https://app.powerbi.com/groups/me/reports/c52522e5-1eab-40e4-9cc1-78df19c84cf2/6408a0bd8a2cc31d1fa2?experience=power-bi
 
 ## Table of Content:
 - [Business Case](#business-case)
@@ -31,7 +31,7 @@ The following source data were stored in Microsoft Excel File
 
 
 ### Tools Used:
-Microsoft Power BI[Download here](https:microsoft.Power BI)
+Microsoft Power BI[Download here](https:microsoft.PowerBI)
 - Power Query
 - Measures(Using DAX)
 - Data Models
@@ -41,6 +41,8 @@ Microsoft Power BI[Download here](https:microsoft.Power BI)
 Data Ingestion & Cleaning :
 Data Preparation Phase- In Power BI environment, Data was extracted from Excel files into Power Query and cleaned by applying the following techniques.
 
+- Load data into Power BI desktop, dataset is a xlsx file.
+- Open Power Query Editor & in "View" tab, under Data Preview Section, Check "Column Distribution", "Column Quality", "Column Profile" for each of the dataset.
 - Data Profiling: Check summary statistics and quality of the data.
 - Data Cleaning: Removing duplicate records from assigned primary columns, checking for outliers, renaming columns appropriately and so on.
 - Data Transformation: Converting data into suitable format for analysis(date, numerical, text format and so on.)
