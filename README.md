@@ -183,6 +183,11 @@ YTD_Gross_Profit:
 ### Data Model
 Create a Data Model View, by connecting the Primary keys in our respective Dimension tables(Date, Account, Product) to the corresponding Foreign Keys in the Sales Fact table.
 
+
+[Data Model(View) Snap Shot](https://github.com/user-attachments/assets/760f6f95-1206-4262-8d13-ac710f3bf67d)
+
+
+
 ### Visualization.
 Formatting and Conditional Formatting of charts/visuals to create a dynamic and interactive dashboard.
  
