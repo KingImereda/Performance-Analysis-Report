@@ -1,6 +1,6 @@
 # Performance Analysis Report in Power BI.
 
-# Interactive Dashboard Link : https://app.powerbi.com/groups/me/reports/c52522e5-1eab-40e4-9cc1-78df19c84cf2/6408a0bd8a2cc31d1fa2?experience=power-bi
+# Interactive Dashboard Link : https://app.powerbi.com/view?r=eyJrIjoiNGU4ZGI2MzQtZTIyNi00ODE4LTljMzUtY2RiMzRiM2JmNTgwIiwidCI6IjJhZGI4MWMwLTM4NjktNDI0Yi1iZmZhLTdjYzViMmE2NTUzMyJ9
 
 ## Table of Content:
 - [Business Case](#business-case)
