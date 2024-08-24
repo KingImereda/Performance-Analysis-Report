@@ -1,4 +1,4 @@
-# Power BI Performance Analysis Report of Fresh Farm Co..
+# Power BI Performance Analysis Report of Fresh Farm Co.
 
 # Interactive Dashboard Link : https://app.powerbi.com/view?r=eyJrIjoiNGU4ZGI2MzQtZTIyNi00ODE4LTljMzUtY2RiMzRiM2JmNTgwIiwidCI6IjJhZGI4MWMwLTM4NjktNDI0Yi1iZmZhLTdjYzViMmE2NTUzMyJ9
 
